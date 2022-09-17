@@ -8,6 +8,7 @@ import Gallery from '../../components/Gallery/Gallery';
 import Loader from 'components/Loader/Loader';
 import { toast } from 'react-toastify';
 import { useSearchParams } from 'react-router-dom';
+import { throttle } from 'throttle-debounce';
 
 const Status = {
   IDLE: 'idle',
@@ -60,11 +61,13 @@ const Movies = () => {
     setStatus(Status.IDLE);
   };
 
+  const throttleChangeSearch = throttle(1000, changeSearch);
+
   if (!movies) return;
 
   return (
     <>
-      <Searchbar changeSearch={changeSearch} search={searchParam} />
+      <Searchbar changeSearch={throttleChangeSearch} search={searchParam} />
       <Box
         display="flex"
         justifyContent="center"
