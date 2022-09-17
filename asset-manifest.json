@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-05-movies/static/css/main.06a34507.css",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.1a82cb89.js",
+    "static/js/544.8bf6233c.chunk.js": "/goit-react-hw-05-movies/static/js/544.8bf6233c.chunk.js",
+    "static/js/297.65dfaebe.chunk.js": "/goit-react-hw-05-movies/static/js/297.65dfaebe.chunk.js",
+    "static/js/30.df9bd95f.chunk.js": "/goit-react-hw-05-movies/static/js/30.df9bd95f.chunk.js",
+    "static/js/736.b41f16f1.chunk.js": "/goit-react-hw-05-movies/static/js/736.b41f16f1.chunk.js",
+    "static/js/387.57999fa4.chunk.js": "/goit-react-hw-05-movies/static/js/387.57999fa4.chunk.js",
+    "static/js/569.3fb1309e.chunk.js": "/goit-react-hw-05-movies/static/js/569.3fb1309e.chunk.js",
+    "static/js/61.d5731a28.chunk.js": "/goit-react-hw-05-movies/static/js/61.d5731a28.chunk.js",
+    "static/media/TemplateFilm.jpg": "/goit-react-hw-05-movies/static/media/TemplateFilm.20a4581d05c82b378d2d.jpg",
+    "static/media/TemplateActor.webp": "/goit-react-hw-05-movies/static/media/TemplateActor.09aed3b55dea4a15af94.webp",
+    "index.html": "/goit-react-hw-05-movies/index.html",
+    "main.06a34507.css.map": "/goit-react-hw-05-movies/static/css/main.06a34507.css.map",
+    "main.1a82cb89.js.map": "/goit-react-hw-05-movies/static/js/main.1a82cb89.js.map",
+    "544.8bf6233c.chunk.js.map": "/goit-react-hw-05-movies/static/js/544.8bf6233c.chunk.js.map",
+    "297.65dfaebe.chunk.js.map": "/goit-react-hw-05-movies/static/js/297.65dfaebe.chunk.js.map",
+    "30.df9bd95f.chunk.js.map": "/goit-react-hw-05-movies/static/js/30.df9bd95f.chunk.js.map",
+    "736.b41f16f1.chunk.js.map": "/goit-react-hw-05-movies/static/js/736.b41f16f1.chunk.js.map",
+    "387.57999fa4.chunk.js.map": "/goit-react-hw-05-movies/static/js/387.57999fa4.chunk.js.map",
+    "569.3fb1309e.chunk.js.map": "/goit-react-hw-05-movies/static/js/569.3fb1309e.chunk.js.map",
+    "61.d5731a28.chunk.js.map": "/goit-react-hw-05-movies/static/js/61.d5731a28.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06a34507.css",
+    "static/js/main.1a82cb89.js"
+  ]
+}
