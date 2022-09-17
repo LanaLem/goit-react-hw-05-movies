@@ -4,6 +4,6 @@ export const cleanedArray = (movies) =>
         poster,
         vote,
         id,
-        watched: false,
     })
     );
+

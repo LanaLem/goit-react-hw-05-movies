@@ -1,0 +1,1 @@
+export const parser = (array) => array.map(({ name }) => name).join(', ')

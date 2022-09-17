@@ -9,6 +9,8 @@ export const Button = ({ func, text, type }) => {
   );
 };
 
+export default Button;
+
 Button.propTypes = {
   func: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
