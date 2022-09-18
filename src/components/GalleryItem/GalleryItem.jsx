@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-import { Box } from '../../constants';
 import Template from '../../constants/TemplateFilm.jpg';
 import * as SC from './GalleryItem.styled';
 
@@ -14,10 +13,10 @@ export const GalleryItem = ({ title, poster, vote, id }) => {
         src={poster ? `https://image.tmdb.org/t/p/w500${poster}` : Template}
         alt={title}
       />
-      <Box mb={2}>
+      <SC.P>
         <SC.TextSpan>Votes: </SC.TextSpan>
-        {vote}
-      </Box>
+        <SC.VoteSpan>{Number(vote).toFixed(1)}</SC.VoteSpan>
+      </SC.P>
     </SC.StyledLink>
   );
 };

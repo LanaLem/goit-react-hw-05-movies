@@ -19,7 +19,7 @@ export const Searchbar = ({ changeSearch }) => {
       >
         <SC.FormSearchbar>
           <SC.ButtonForm type="submit">
-            <span>Пошук</span>
+            <span>Search</span>
           </SC.ButtonForm>
 
           <SC.SearchbarWrap>

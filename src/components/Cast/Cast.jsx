@@ -28,7 +28,7 @@ const Cast = () => {
     <>
       <div>
         <SC.H3>Cast:</SC.H3>
-        {cast.length <= 0 && <p>Sorry, there are no info :(</p>}
+        {cast.length <= 0 && <SC.P>Sorry, there are no info :(</SC.P>}
         <SC.Ul>
           {cast.map(({ credit_id, name, character, profile_path }) => {
             return (
@@ -41,14 +41,14 @@ const Cast = () => {
                   }
                   alt={name}
                 />
-                <Box p={2}>
+                <Box p={3}>
                   <p>
                     <SC.Span>Actor: </SC.Span>
                     {name}
                   </p>
                   <p>
                     <SC.Span>Character: </SC.Span>
-                    {character}
+                    {character || 'No info :('}
                   </p>
                 </Box>
               </SC.Li>
@@ -59,7 +59,7 @@ const Cast = () => {
 
       <div>
         <SC.H3>Crew:</SC.H3>
-        {crew.length <= 0 && <p>Sorry, there are no info :(</p>}
+        {crew.length <= 0 && <SC.P>Sorry, there are no info :(</SC.P>}
         <SC.Ul>
           {crew.map(({ credit_id, name, job, profile_path }) => {
             return (
@@ -72,9 +72,9 @@ const Cast = () => {
                   }
                   alt={name}
                 />
-                <p>
+                <Box as="p" p={3}>
                   <SC.Span>{job}</SC.Span>: {name}
-                </p>
+                </Box>
               </SC.Li>
             );
           })}

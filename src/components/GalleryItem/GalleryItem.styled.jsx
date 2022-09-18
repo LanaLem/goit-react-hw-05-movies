@@ -12,6 +12,7 @@ export const H2 = styled.h2`
   font-size: ${p => p.theme.fontSizes.s};
   line-height: 1.16;
   text-transform: uppercase;
+  text-align: center;
 
   text-shadow: ${p => p.theme.shadow.redText};
 `;
@@ -22,12 +23,21 @@ export const Image = styled.img`
   height: 396px;
   object-fit: cover;
   border-radius: ${p => p.theme.radii.normal};
+  margin-bottom: ${p => p.theme.space[2]}px;
+`;
+
+export const P = styled.p`
+  font-weight: ${p => p.theme.fontWeights.bold};
+  text-shadow: ${p => p.theme.shadow.black};
+  text-align: center;
 `;
 
 export const TextSpan = styled.span`
-  font-weight: ${p => p.theme.fontWeights.bold};
   color: ${p => p.theme.colors.darkRed};
-  text-shadow: ${p => p.theme.shadow.black};
+`;
+
+export const VoteSpan = styled.span`
+  color: ${p => p.theme.colors.red};
 `;
 
 export const Button = styled.button`

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getReview } from '../../servises/api';
 import Loader from 'components/Loader/Loader';
-import Template from '../../constants/TemplateActor.webp';
+import Template from '../../constants/TemplateUser.png';
 import Button from '../Button/Button';
 import * as SC from './Reviews.styled';
 import { toast } from 'react-toastify';
@@ -40,7 +40,7 @@ export const Reviews = () => {
     setPage(prevState => prevState + 1);
   };
 
-  if (!reviews) return <p>Sorry, there are no reviews :(</p>;
+  if (!reviews) return <SC.P>Sorry, there are no reviews :(</SC.P>;
 
   return (
     <>

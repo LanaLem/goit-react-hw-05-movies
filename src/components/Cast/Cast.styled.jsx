@@ -3,14 +3,15 @@ import styled from 'styled-components';
 export const Img = styled.img`
   display: block;
   width: 100%;
-
+  height: 300px;
+  object-fit: contain;
   border-radius: ${p => p.theme.radii.normal};
 `;
 
 export const Li = styled.li`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   width: 200px;
   border-radius: ${p => p.theme.radii.normal};
@@ -44,4 +45,11 @@ export const Span = styled.span`
   color: ${p => p.theme.colors.darkRed};
   font-weight: ${p => p.theme.fontWeights.bold};
   text-shadow: ${p => p.theme.shadow.black};
+`;
+
+export const P = styled.p`
+  text-align: center;
+  color: ${p => p.theme.colors.darkRed};
+  font-weight: ${p => p.theme.fontWeights.bold};
+  font-size: 24px;
 `;
