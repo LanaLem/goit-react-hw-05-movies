@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getReview } from '../../servises/api';
-import  Loader  from 'components/Loader/Loader';
+import Loader from 'components/Loader/Loader';
 import Template from '../../constants/TemplateActor.webp';
 import Button from '../Button/Button';
 import * as SC from './Reviews.styled';
@@ -61,7 +61,9 @@ export const Reviews = () => {
                   <SC.Img
                     src={
                       avatar_path
-                        ? `https://image.tmdb.org/t/p/w500${avatar_path}`
+                        ? avatar_path.includes(`http`)
+                          ? avatar_path.slice(1)
+                          : `https://image.tmdb.org/t/p/w500${avatar_path}`
                         : Template
                     }
                     alt="author"

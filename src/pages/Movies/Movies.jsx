@@ -8,7 +8,6 @@ import Gallery from '../../components/Gallery/Gallery';
 import Loader from 'components/Loader/Loader';
 import { toast } from 'react-toastify';
 import { useSearchParams } from 'react-router-dom';
-import { throttle } from 'throttle-debounce';
 
 const Status = {
   IDLE: 'idle',
@@ -54,20 +53,22 @@ const Movies = () => {
     setPage(prevState => prevState + 1);
   };
 
-  const changeSearch = value => {
-    setSearchParams(value !== '' ? { search: value.trim().toLowerCase() } : {});
+  const changeSearch = ({ search }, action) => {
+    setSearchParams(
+      search !== '' ? { search: search.trim().toLowerCase() } : {}
+    );
     setPage(1);
     setMovies([]);
     setStatus(Status.IDLE);
-  };
 
-  const throttleChangeSearch = throttle(1000, changeSearch);
+    action.resetForm();
+  };
 
   if (!movies) return;
 
   return (
     <>
-      <Searchbar changeSearch={throttleChangeSearch} search={searchParam} />
+      <Searchbar changeSearch={changeSearch} search={searchParam} />
       <Box
         display="flex"
         justifyContent="center"

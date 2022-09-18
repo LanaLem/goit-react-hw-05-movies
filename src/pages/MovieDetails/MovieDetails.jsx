@@ -52,10 +52,14 @@ const MovieDetails = () => {
       </Box>
       <Box as="ul" display="flex" justifyContent="center" mb={3}>
         <li>
-          <SC.Link to="cast">Cast</SC.Link>
+          <SC.Link to="cast" state={{ from: location.state.from }}>
+            Cast
+          </SC.Link>
         </li>
         <li>
-          <SC.Link to="reviews">Reviews</SC.Link>
+          <SC.Link to="reviews" state={{ from: location.state.from }}>
+            Reviews
+          </SC.Link>
         </li>
       </Box>
 
